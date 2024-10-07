@@ -1,0 +1,118 @@
+* {
+    font-family: 'Kanit';
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.header {
+    line-height: 1.4;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+    color: navy;
+}
+
+h3 {
+    font-size: 26px;
+    font-style: italic;
+}
+
+nav {
+    background-color: rgb(169, 34, 247);
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; /* กระจายช่องว่างระหว่างแต่ละรายการ */
+    align-items: center;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #ffa600;
+    color: black;
+}
+
+/* สำหรับหน้าจอเล็ก: เมนูจะเรียงแนวตั้ง */
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        flex-grow: unset; /* ยกเลิกการขยายในมือถือ */
+    }
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    width: auto;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(154, 0, 0);
+    color: white;
+}
+
+.none {
+    color: red;
+    padding: 10px 20px;
+    border: dotted;
+    width: auto;
+}
+
+.container-b {
+    border-style: ridge;
+    border-color: navy;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.container-g {
+    margin-bottom: 20px;
+    border-style: ridge;
+    border-color: rgb(0, 128, 73);
+    padding: 20px;
+}
+
+.conTact {
+    color: #ffa600;
+    padding: 10px 20px;
+    border: none;
+    width: auto;
+    background-color: antiquewhite;
+}
+
+.button-ig {
+    background-color: rgb(226, 43, 205);
+    color: white;
+}
+
+.button-line {
+    background-color: rgb(12, 177, 12);
+    color: white;
+}
